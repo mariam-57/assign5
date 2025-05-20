@@ -1,0 +1,147 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+font-size: 1rem;
+}
+span{
+  color: rgb(52, 50, 50);
+  right: 0;
+}
+
+img{
+    align-self: center;
+}
+.btn{
+  background-color:rgb(45, 93, 95);
+  color: white;
+}
+.input{
+  margin: auto;
+  display: flex;
+  align-self: center;  
+  align-items: center;
+}
+.admin{
+  margin: auto;
+  color: rgb(52, 50, 50);
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.add-to-cart{
+  border: 1px solid ;
+  background-color: rgb(252, 255, 252);
+  color: black;
+  border-radius: 20px;
+
+}
+.add-to-cart:hover{
+  background-color: rgb(85, 114, 85);
+  color: white;
+}
+
+.stock-status {
+  font-weight: bold;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.in-stock {
+  background-color: #67aa69;
+  color: white;
+}
+
+.out-of-stock {
+  color: white; 
+  background-color: rgb(194, 74, 74);
+}
+
+.price-section {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.current-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.original-price {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 8px 0;
+  
+  .stars {
+    color: #ffc107;
+    font-size: 0.9rem;
+  }
+  
+  .rating-value {
+    font-size: 0.8rem;
+    color: #666;
+  }
+}
+.add-to-cart {
+  width: 100%;
+  margin-top: auto;
+}
+*{
+  font-family: 'Times New Roman', Times, serif;
+font-size: 1rem;
+}
+span{
+  color: rgb(52, 50, 50);
+  right: 0;
+}
+
+img{
+    align-self: center;
+}
+.btn{
+  background-color:rgb(45, 93, 95);
+  color: white;
+}
+.input{
+  margin: auto;
+  display: flex;
+  align-self: center;  
+  align-items: center;
+}
+.admin{
+  margin: auto;
+  color: rgb(52, 50, 50);
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.add-to-cart{
+  border: 1px solid ;
+  background-color: rgb(252, 255, 252);
+  color: black;
+  border-radius: 20px;
+}
+.add-to-cart:hover{
+  background-color: rgb(85, 114, 85);
+  color: white;
+}
+
+.star-rating {
+      display: inline-block;
+      font-size: 24px;
+      color: #ccc;
+    }
+    .star-rating .filled {
+      color: #ffc107;
+    }
+    .star-rating span {
+      cursor: pointer;
+    }

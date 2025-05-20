@@ -1,0 +1,40 @@
+    <section>
+        <div class="container py-5">
+    <div class="row justify-content-center">
+                @for (product of products; track product.id) {
+            <div class="col-md-8 col-lg-6 col-xl-4 my-5 gap-5">
+            <div class="card h-100" style="background-color: rgb(247, 245, 245); border: none;">
+            <img [src]="product.thumbnail" class="card-img-top hello my-5">
+                        @if (product.rating >= 3) {
+            <div class="col-2">
+                <span class="badge text-bg-danger m-1">Top Rated</span>
+            </div>
+        }@else {
+            <div class="col-2">
+                <span class="badge text-bg-success m-1">{{ product.rating }}</span>
+            </div>
+        }
+            <div class="stock-status w-25 mx-3" [class.out-of-stock]="product.stock === 0" [class.in-stock]="product.stock > 0">
+            {{ product.stock === 0 ? 'Out of stock' : 'In stock' }}
+            </div>
+        <div class="stock-status align-self-start mx-3 my-1" [class.low-stock]="product.stock < 10">
+            {{ product.stock > 0 ? (product.stock + ' in stock') : '' }}
+        </div>
+
+        <ul class="list-group-flush">
+        <div class="d-flex row-cols-2 fw-bolder justify-content-around">
+        <li class="list-group-item " >{{ product.title }}</li> 
+        <li class=" list-group-item ">{{ product.price }}$</li>
+        </div>
+        <li class="list-group-item"> {{ product.category }} </li>
+        </ul> 
+            <button mat-raised-button color="primary" class="add-to-cart w-25 align-self-start p-1 my-2 mx-5">
+        Add to Cart
+        </button>
+    </div> 
+    </div>
+    }
+    </div>
+        </div>
+    </section>
+    

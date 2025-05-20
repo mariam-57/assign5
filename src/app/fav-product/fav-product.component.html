@@ -1,0 +1,23 @@
+<div class="col">
+    <div class="card">
+      <img [src]="product.thumbnail" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{product.title| uppercase}}</h5>
+        <ul>
+            @for (product of product; track $index) {
+              <li>{{product}}</li>
+            }
+        </ul>
+        <h4>{{product.description }}</h4>
+        <h6>{{product.price }}</h6>
+        <h6>{{product.brand }}</h6>
+        <h6>{{product.category }}</h6>
+        <p class="stock">In stock: {{ product.stock }}</p>
+        <p class="rating">Rating: {{ product.rating }}/5 ⭐</p>
+
+        <button class="btn btn-success"(click)="moveToDetails(product.id)">show details</button>
+      </div>
+    </div>
+  <!-- </a> -->
+  </div> 
+ 

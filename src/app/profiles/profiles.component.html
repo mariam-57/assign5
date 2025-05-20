@@ -1,0 +1,12 @@
+   <section class="cards">
+     <div class="container my-5">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+            @for (product of products; track $index) {
+                <app-user [product] = "product" (sendToParent)="deleteRecipe($event)"></app-user>
+}
+</div>
+    </div>
+
+   </section>
+  
+

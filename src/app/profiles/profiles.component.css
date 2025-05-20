@@ -1,0 +1,39 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+font-size: 1rem;
+}
+span{
+  color: rgb(52, 50, 50);
+  right: 0;
+}
+
+img{
+    align-self: center;
+}
+.btn{
+  background-color:rgb(45, 93, 95);
+  color: white;
+}
+.input{
+  margin: auto;
+  display: flex;
+  align-self: center;  
+  align-items: center;
+}
+.admin{
+  margin: auto;
+  color: rgb(52, 50, 50);
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.add-to-cart{
+  border: 1px solid ;
+  background-color: rgb(252, 255, 252);
+  color: black;
+  border-radius: 20px;
+}
+.add-to-cart:hover{
+  background-color: rgb(85, 114, 85);
+  color: white;
+}
